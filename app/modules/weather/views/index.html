@@ -1,0 +1,5 @@
+<div class='container' ng-controller='WeatherController as weatherCtrl'>
+	<input type="text" ng-model="weatherCtrl.location"/>
+	<button ng-click="weatherCtrl.onSearchWeather()">Search</button>
+	<span ng-bind="weatherCtrl.weatherInformations"></span>
+</div>

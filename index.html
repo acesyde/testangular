@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="TestAngularApp">
+	<head>
+		<meta charset="utf-8">
+		<title>Test Angular</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+		
+		<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+		<script type="text/javascript" src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+		<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	</head>
+	<body>		
+		
+		<nav>
+            <a href="#/home" class="btn btn-primary">Home</a>
+            <a href="#/weather" class="btn btn-success">Weather</a>
+        </nav>
+		
+		<div ng-view>
+        </div>
+		
+		<script type="text/javascript" src="app/app.js"></script>
+		<script type="text/javascript" src="app/common/routing/routes.js"></script>
+		<script type="text/javascript" src="app/common/notification/NotificationFactory.js"></script>
+		<script type="text/javascript" src="app/modules/home/HomeController.js"></script>
+		<script type="text/javascript" src="app/modules/weather/WeatherController.js"></script>
+		<script type="text/javascript" src="app/modules/weather/services/weatherService.js"></script>
+	</body>
+</html>
